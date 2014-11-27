@@ -11,3 +11,9 @@ module.exports.initialize = function(app) {
     app.post('/api/contacts', contacts.add);
     app.put('/api/contacts', contacts.update);
 };
+
+module.exports = {
+    index: function(req, res) {
+        res.render('index');
+    }
+};
